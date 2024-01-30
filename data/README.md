@@ -5,7 +5,9 @@
 - *pbmc3k_file.h5ad* - pbmc3k anndata file (raw), used in 'Binary_Only' & 'Binary_lsi' notebooks (Source 2)
 - *pbmc3k_standard.h5ad* - pbmc3k anndata file, annotated by us, used in 'Binary_Only' & 'Binary_lsi' notebooks (Source 2)
 - *pbmc10k_merge.h5ad* - pbmc10k binarized & concatenated anndata file, used in 'Binary_integ' notebook (Source 3)
-- *pbmc10k_updated.h5mu* - pbmc10k multiomic Muon file, annotated, used in 'Binary_integ' (Source 3)
+- *pbmc10k_updated.h5mu[partaa & partab]* - pbmc10k multiomic Muon file, annotated, used in 'Binary_integ' (Source 3). This file has been split to accomadate GitHub's large file policy. The split files may be merged by running the command:
+
+> cat pbmc10k_updated.h5mu.part* > pbmc10k_updated.h5mu
 
 
 Data Sources
