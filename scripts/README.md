@@ -1,13 +1,29 @@
-# Folder Contents
+# Single-Cell Data Binarization and Integration
 
-* ambigious_cluster_improvement - scripts to progressively modify ratios of integrated modalities in binary integrated datasets
+This folder contains scripts for single-cell data binarization, integration, and analysis across multiple modalities. The project implements several methods for multimodal data integration and factor analysis.
 
-* multigrate - script to integrate using Multigrate
+## Folder Structure
 
-* muon - script to integrate using MOFA+
+    simulation/: Scripts for generating synthetic single-cell multi-modal data
+        Realistic simulations of RNA-seq and ATAC-seq data with ground truth populations
+        Customizable parameters for various simulation scenarios
 
-* scbfa - script to integrate using scBFA
+    scbfa/: Single-Cell Bayesian Factor Analysis implementation
+        Model building and training scripts
+        Analysis and visualization tools for BFA results
 
-* scmomat - script to integrate using scMoMaT
+    muon/: Muon-based integration of multi-modal data
+        Implementation of MOFA (Multi-Omics Factor Analysis)
+        Processing and analysis of integrated data
 
-* simulation - script to simulate the multiomic single cell dataset used in the study
+    momat/: scMOMAT integration methods
+        Maximum-margin optimization for multi-omics alignment
+        Clustering and visualization of integrated results
+
+    multigrate/: multigrate integration 
+        Constructing weighted nearest-neighbor graphs for each modality
+        Computing joint feature spaces that preserve modality-specific signals
+
+    ambigious_cluster_improvement/: analyzing ambiguous cell clusters
+        Identifies cells with uncertain classification using ensemble methods
+        Quantifies the degree of ambiguity for each cell
